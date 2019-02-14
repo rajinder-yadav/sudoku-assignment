@@ -10,7 +10,7 @@ public class SudokuFileReader {
 
   ArrayList<String> lineBuffer = new ArrayList<String>();
 
-  SudokuFileReader(String file) {
+  SudokuFileReader(String file) throws IOException {
     String line;
     BufferedReader br;
 
@@ -26,6 +26,7 @@ public class SudokuFileReader {
     }
     catch(IOException ex) {
       System.out.println("File read error.");
+      throw ex;
     }
     // Validate 9 lines of input were read.
     if(this.lineBuffer.size() != 9) {
