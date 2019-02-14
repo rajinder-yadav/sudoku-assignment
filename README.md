@@ -18,7 +18,7 @@ Project created using Eclipse. To run, open project using Eclipse, and pass file
 
 The project also has several test cases using JUnit, see package: __test.com.yadav.sudoku__
 
-__Same Rum Output__
+__Sample Run Output__
 
 ```sh
 Input file read successfully.
