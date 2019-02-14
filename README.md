@@ -14,11 +14,9 @@ https://en.wikipedia.org/wiki/Sudoku
 
 Project was coded using Java 8.
 
-Project created using Eclipse. To run, pass file as argument to program. Use absolute path to avoid runtime error.
+Project created using Eclipse. To run, open project using Eclipse, and pass file as argument to program. Use absolute path to avoid runtime error.
 
 The project also has several test cases using JUnit, see package: __test.com.yadav.sudoku__
-
-Below is a valid test input time.
 
 __Same Test Output__
 
@@ -29,6 +27,8 @@ Columns are valid.
 Regions are valid.
 Sudoku is valid.
 ```
+
+Below is a valid Sudoku test input file.
 
 ## sudoku.input.txt
 
