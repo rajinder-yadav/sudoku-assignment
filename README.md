@@ -21,7 +21,7 @@ The project also has several test cases using JUnit, see package: __test.com.yad
 __Same Rum Output__
 
 ```sh
-Input file is valid.
+Input file read successfully.
 Rows are valid.
 Columns are valid.
 Regions are valid.
