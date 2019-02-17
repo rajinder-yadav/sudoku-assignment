@@ -12,7 +12,7 @@ public class SudokuFileReader {
 
   SudokuFileReader(String file) throws IOException {
     String line;
-    BufferedReader br;
+    BufferedReader br = null;
 
     try {
       br = new BufferedReader(new FileReader(file));
@@ -22,11 +22,15 @@ public class SudokuFileReader {
           lineBuffer.add(line);
         }
       } while(line != null);
-      br.close();
     }
     catch(IOException ex) {
       System.out.println("File read error.");
       throw ex;
+    }
+    finally {
+      if(br != null) {
+        br.close();
+      }
     }
     // Validate 9 lines of input were read.
     if(this.lineBuffer.size() != 9) {
